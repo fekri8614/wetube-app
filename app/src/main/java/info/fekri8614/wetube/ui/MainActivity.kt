@@ -14,6 +14,7 @@ import androidx.navigation.compose.rememberNavController
 import dev.burnoo.cokoin.Koin
 import dev.burnoo.cokoin.navigation.KoinNavHost
 import info.fekri8614.wetube.di.myModules
+import info.fekri8614.wetube.ui.feature.splash.SplashScreen
 import info.fekri8614.wetube.ui.theme.WeTubeTheme
 import info.fekri8614.wetube.util.MyScreens
 import org.koin.android.ext.koin.androidContext
@@ -76,8 +77,4 @@ fun EntryScreenSecond() {
 
 @Composable
 fun EntryScreenFirst() {
-}
-
-@Composable
-fun SplashScreen() {
 }
