@@ -48,7 +48,11 @@ fun SplashScreen(modifier: Modifier = Modifier) {
     // if internet is connected
     Handler().postDelayed({
         if (NetworkChecker(context).isInternetConnected) {
-            navigation.navigate(MyScreens.MainScreen.route)
+            navigation.navigate(MyScreens.MainScreen.route) {
+                popUpTo(MyScreens.SplashScreen.route) {
+                    inclusive = true
+                }
+            }
         } else {
             Toast.makeText(
                 context,
