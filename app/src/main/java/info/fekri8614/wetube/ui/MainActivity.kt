@@ -15,7 +15,9 @@ import dev.burnoo.cokoin.Koin
 import dev.burnoo.cokoin.navigation.KoinNavHost
 import info.fekri8614.wetube.di.myModules
 import info.fekri8614.wetube.ui.feature.main.MainScreen
+import info.fekri8614.wetube.ui.feature.shorts.ShortsScreen
 import info.fekri8614.wetube.ui.feature.splash.SplashScreen
+import info.fekri8614.wetube.ui.feature.videoLib.VideoLibraryScreen
 import info.fekri8614.wetube.ui.theme.WeTubeTheme
 import info.fekri8614.wetube.util.MyScreens
 import org.koin.android.ext.koin.androidContext
@@ -54,6 +56,14 @@ fun MainAppUi() {
 
         composable(MyScreens.MainScreen.route) {
             MainScreen()
+        }
+
+        composable(MyScreens.ShortsScreen.route) {
+            ShortsScreen()
+        }
+
+        composable(MyScreens.VideoLibraryScreen.route) {
+            VideoLibraryScreen()
         }
 
     }
