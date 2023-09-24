@@ -31,7 +31,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import dev.burnoo.cokoin.navigation.getNavController
-import info.fekri8614.wetube.ui.theme.GreyLight
+import info.fekri8614.wetube.ui.theme.*
 import info.fekri8614.wetube.ui.theme.Shapes
 import info.fekri8614.wetube.ui.theme.robotoFamily
 import info.fekri8614.wetube.util.MainTopBar
@@ -94,13 +94,14 @@ fun AdsBar(
                     length = textLength
                 ),
                 style = TextStyle(
-                    fontFamily = robotoFamily, fontWeight = FontWeight.Normal,
+                    fontFamily = robotoFamily,
+                    fontWeight = FontWeight.Normal,
                     color = Color.Black,
                     fontSize = 16.sp
                 )
             )
 
-            Button(
+            TextButton(
                 onClick = { onRedMoreClicked.invoke("") }, // pass the real one(s)
                 shape = Shapes.small,
             ) {
